@@ -1,0 +1,6 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Sitemap: https://pennyzhao1507288.github.io/sitemap.xml
+Sitemap: https://pennyzhao1507288.github.io/baidusitemap.xml
