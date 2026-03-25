@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'SentyWatermelon';
+    font-display: swap;
+    src: url('../font/SentyWatermelon-2.ttf') format("truetype");
+}
+@font-face{
+    font-family: 'AlimamaDongFangDaKai';
+    font-display: swap;
+    src: url('../font/AlimamaDongFangDaKai-Regular.ttf') format("truetype");
+}
+body {
+    font-family: 'AlimamaDongFangDaKai','SentyWatermelon';
+}
