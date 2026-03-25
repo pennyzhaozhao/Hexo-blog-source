@@ -23,6 +23,21 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Debug repo files
+        run: |
+          echo "===== root files ====="
+          ls -la
+          echo "===== theme in _config.yml ====="
+          grep "^theme:" _config.yml || true
+          echo "===== themes directory ====="
+          ls -la themes || true
+          echo "===== butterfly directory ====="
+          ls -la themes/butterfly || true
+          echo "===== butterfly scripts/tag ====="
+          ls -la themes/butterfly/scripts/tag || true
+          echo "===== check note.js ====="
+          test -f themes/butterfly/scripts/tag/note.js && echo "note.js exists" || echo "note.js missing"
+
       - name: Generate static files
         run: npx hexo generate
 
